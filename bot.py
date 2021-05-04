@@ -5,24 +5,25 @@ from telebot import types
 
 bot = telebot.TeleBot(config.TOKEN)
 
-Button1 = types.KeyboardButton("Подписаться✅
-Button2 = types.KeyboardButton("Отписаться🚫
-Button3 = types.KeyboardButton("Написать в тех.поддержку\nпо любым вопросам🕹⚒💵
-Button4 = types.KeyboardButton("STOP🚫
-Button5 = types.KeyboardButton("Admin 
-Button6 = types.KeyboardButton("Включить бота✅
-Button7 = types.KeyboardButton('Ответ подписчику✏️
-Button8 = types.KeyboardButton("Удаление сообщений🗑
-Button9 = types.KeyboardButton("ПЕРЕЗАГРУЗКА 🔁
-Button10 = types.KeyboardButton("Написать ВСЕМ✏️
-Button11 = types.KeyboardButton("СТАТИСТИКА📊
-Button12 = types.KeyboardButton("Чем поможет этот бот?🌟
-Button13 = types.KeyboardButton("РАЗБОР ВАШЕГО ПРОФИЛЯ🤩
+Button1 = types.KeyboardButton("Подписаться✅")
+Button2 = types.KeyboardButton("Отписаться🚫")
+Button3 = types.KeyboardButton("Написать в тех.поддержку\nпо любым вопросам🕹⚒💵")
+Button4 = types.KeyboardButton("STOP🚫")
+Button5 = types.KeyboardButton("Admin")
+Button6 = types.KeyboardButton("Включить бота✅")
+Button7 = types.KeyboardButton('Ответ подписчику✏️")
+Button8 = types.KeyboardButton("Удаление сообщений🗑")
+Button9 = types.KeyboardButton("ПЕРЕЗАГРУЗКА 🔁")
+Button10 = types.KeyboardButton("Написать ВСЕМ✏️")
+Button11 = types.KeyboardButton("СТАТИСТИКА📊")
+Button12 = types.KeyboardButton("Чем поможет этот бот?🌟")
+Button13 = types.KeyboardButton("РАЗБОР ВАШЕГО ПРОФИЛЯ🤩")
 Button14 = types.KeyboardButton("ПОЛУЧИТЬ КУРС💎")
 
-stop = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True).add(
-start = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True).add(Button2, Button1).row(Button14).row(Button13).row(Button12).row(
-adminon = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True).add(Button9, Button7).row(Button8).row(Button10).row(Button11)
+stop = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True).add(Button4)
+start = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True).add(Button2, Button1).row(Button14).row(Button13).row(Button12).row(Button3)
+adminon = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True).add(Button9, Button7).row(Button8).row(Button10).row(Button11)
+
 
 
 @bot.message_handler(commands=['start'])
