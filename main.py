@@ -866,7 +866,7 @@ def start_bot():
 
     def ipdef(message):
         try:
-            r = requests.get(f"https://api.ipdata.co/{message.text}?api-key=7149ffee49a432bb1c7557e3235afdf78a2d22fcdde3a4ecd7a5d5ca")
+            r = requests.get(f"https://api.ipdata.co/{message.text}?api-key= d447ba23f69ad702941ce2d52dc058918b1f5b87978329c255596101")
             data = json.loads(r.text)
             city = str(data['city'])
             region = str(data['region'])
