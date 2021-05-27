@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "helper_bot"
+version = "0.9.3"
+description = ""
+authors = ["Cicada3301"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+telebot = "^0.0.4"
+random2 = "^1.0.1"
+threading2 = "^0.3.1"
+"rc.types" = "^1.0dev"
+urllib3 = "^1.26.5"
+phonenumbers = "^8.12.23"
+bs4 = "^0.0.1"
+sqlite-connector = "^0.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
